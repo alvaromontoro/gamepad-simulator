@@ -1,4 +1,4 @@
-const gamepadSimulator = {
+export const gamepadSimulator = {
   getGamepads: null,
   fakeController: {
     axes: [0, 0, 0, 0],
@@ -257,3 +257,5 @@ fill: fuchsia;
     document.querySelector("#amdfc-controller").classList.remove("connected");
   },
 };
+
+export default gamepadSimulator;
