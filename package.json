@@ -3,9 +3,11 @@
   "version": "0.0.1",
   "description": "JS module that generates a virtual game controller to use with the Gamepad API",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "build": "webpack --output-filename index.min.js --mode production",
-    "build:dev": "webpack --output-filename index.js --mode development"
+    "build": "webpack --output-filename index.js --mode development && webpack --output-filename index.min.js --mode production",
+    "postbuild": "cp ./dist/index.js ./public/js/gamepadController.js",
+    "start": "yarn build && http-server ./public"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,7 @@
   "homepage": "https://github.com/alvaromontoro/gamepad-simulator",
   "dependencies": {},
   "devDependencies": {
+    "http-server": "0.12.3",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },
