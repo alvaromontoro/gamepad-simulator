@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>gamepadSimulator demo</title>
+    <link rel="stylesheet" href="./css/example.css" />
+  </head>
+  <body>
+    <p>
+      Use the button below to connect/disconnect the virtual gamepad, then click on the buttons and
+      axes to simulate working with the gamepad. Info messages will be displayed on screen and in
+      the console.
+    </p>
+    <p>
+      <button id="connect-disconnect">Connect</button>
+      <button onclick="document.querySelector('#events').innerHTML = '';">Clear log</button>
+    </p>
+    <p id="events"></p>
+    <script src="./js/gamepadController.js"></script>
+    <script src="./js/example.js"></script>
+  </body>
+</html>

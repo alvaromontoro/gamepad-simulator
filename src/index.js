@@ -258,4 +258,6 @@ fill: fuchsia;
   },
 };
 
+window.gamepadSimulator = gamepadSimulator;
+
 export default gamepadSimulator;

@@ -1,0 +1,26 @@
+p,
+button {
+  max-width: 50ch;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5em;
+}
+
+button {
+  color: white;
+  background: #369;
+  border: 0;
+  padding: 0.5rem 1rem;
+}
+
+button:hover {
+  background: #136;
+}
+
+#amdfc-controller {
+  position: fixed !important;
+  bottom: 1vmin;
+  right: 1vmin;
+  max-width: 350px;
+  width: 40vw;
+}
