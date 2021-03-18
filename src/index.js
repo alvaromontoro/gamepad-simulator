@@ -199,6 +199,7 @@ fill: fuchsia;
         if (element.id.indexOf("amdfc-button") === 0) {
           const index = parseInt(element.id.replace("amdfc-button-", ""));
           gamepadSimulator.fakeController.buttons[index].pressed = true;
+          gamepadSimulator.fakeController.buttons[index].value = 1;
           gamepadSimulator.fakeController.timestamp = Math.floor(Date.now() / 1000);
         } else if (element.id.indexOf("amdfc-axe-") === 0) {
           const axe = parseInt(element.id[10]);
@@ -215,6 +216,7 @@ fill: fuchsia;
         if (element.id.indexOf("amdfc-button") === 0) {
           const index = parseInt(element.id.replace("amdfc-button-", ""));
           gamepadSimulator.fakeController.buttons[index].pressed = false;
+          gamepadSimulator.fakeController.buttons[index].value = 0;
           gamepadSimulator.fakeController.timestamp = Math.floor(Date.now() / 1000);
         } else if (element.id.indexOf("amdfc-axe-") === 0) {
           const axe = parseInt(element.id[10]);

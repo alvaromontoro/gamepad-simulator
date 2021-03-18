@@ -66,4 +66,4 @@ document.querySelector("#connect-disconnect").addEventListener("click", function
   }
 });
 
-rgamepadSimulator.create();
+gamepadSimulator.create();
