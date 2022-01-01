@@ -26,9 +26,9 @@
   "homepage": "https://github.com/alvaromontoro/gamepad-simulator",
   "dependencies": {},
   "devDependencies": {
-    "http-server": "0.12.3",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "http-server": "^14.0.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
   },
   "bugs": {
     "url": "https://github.com/alvaromontoro/gamepad-simulator/issues"
